@@ -17,10 +17,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         z++;
 
-        myCat = new Cat(3, "Barsik", "Simple", "white");
+        myCat = new Cat(3, "Barsik", "Simple", "red");
         myCat.talk();
 
-        Cat murzik = new Cat(4, "Murzik", "Markeloff", "black");
+        Cat murzik = new Cat(4, "Murzik", "Markeloff", "yellow");
         murzik.talk();
 
         Cat glasha = new Cat();
@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         glasha.breed = "Zeus";
         glasha.color = "brown";
         glasha.talk();
+
+        Cat vaska = new Cat();
+        vaska.talk("Meow, meow!");
 
         Puma puma = new Puma();
         puma.name = "Leo";
