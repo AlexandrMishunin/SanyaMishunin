@@ -1,7 +1,18 @@
 package com.example.sanyamishunin;
 //AlexandrMishunin
 
+import android.util.Log;
+
 public interface Movable {
-    void move();
+
+    int speedOfMoving = 100;
+
+    default void move() {
+        Log.i("move()", "Move Puma");
+    }
+
+    static void someMethod() {
+        Log.i("someMethod()", "someMethod Puma");
+    }
 
 }
