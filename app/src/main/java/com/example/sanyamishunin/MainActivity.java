@@ -4,7 +4,7 @@ package com.example.sanyamishunin;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.util.Log;
+import android.util.*;
 
 import java.util.ArrayList;
 
@@ -18,11 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Cat cat1 = new Cat();
-        Log.i("numberOfLegs", "cat1 number of legs" + cat1.number0fLegs + Cat.whatCatsLike());
+        Cat cat32 = new Cat(1, "Simple");
+        cat32.talk();
+        Cat cat33 = new Cat(5, "Markeloff");
+        cat33.talk();
+        Cat cat34 = new Cat(8, "Zeus");
+        cat34.talk();
 
-
-        Lion lion = new Lion();
-        lion.talk();
     }
+
 }
